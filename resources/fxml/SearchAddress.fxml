@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchAddressController">
+    <Label text="Search"/>
+    <HBox spacing="10"><TextField fx:id="searchField" promptText="Qyteti"/><Button text="🔍 Kërko" onAction="#handleSearch"/></HBox>
+    <TableView fx:id="resultsTable" prefHeight="300"><columns><TableColumn fx:id="cityColumn" text="Qyteti"/><TableColumn fx:id="streetColumn" text="Rruga"/><TableColumn fx:id="numberColumn" text="Numri"/><TableColumn fx:id="postalCodeColumn" text="Kodi"/></columns></TableView>
+</VBox>
