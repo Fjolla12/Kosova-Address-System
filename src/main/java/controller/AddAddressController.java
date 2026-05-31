@@ -3,6 +3,8 @@ package controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import javafx.application.Platform;
+import util.FocusManager;
 
 public class AddAddressController {
     @FXML private TextField cityField, streetField, numberField, postalCodeField;
@@ -11,7 +13,19 @@ public class AddAddressController {
     
     public void setDialogStage(Stage s) { stage = s; }
     public void setStatusLabel(Label l) { status = l; }
-    
+    @FXML
+public void initialize() {
+
+    FocusManager.enableTabNavigation(
+            cityField,
+            streetField,
+            numberField,
+            postalCodeField
+    );
+
+    Platform.runLater(() ->
+            FocusManager.setInitialFocus(cityField));
+}
     @FXML private void handleSave() {
         if(cityField.getText().isEmpty() || streetField.getText().isEmpty()) {
             if(status != null) status.setText("Error: Qyteti dhe Rruga required!");

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <top><MenuBar><Menu text="File"><MenuItem text="Exit" onAction="#handleExit"/></Menu><Menu text="Help"><MenuItem text="Help" onAction="#handleHelp"/></Menu></MenuBar></top>
+    <center><VBox spacing="10" alignment="TOP_CENTER"><ToolBar><Button text="➕ Add" onAction="#handleAddAddress"/><Button text="🔍 Search" onAction="#handleSearch"/><Button text="📊 Dashboard" onAction="#handleDashboard"/></ToolBar><Label fx:id="statusLabel" text="Ready"/></VBox></center>
+</BorderPane>
