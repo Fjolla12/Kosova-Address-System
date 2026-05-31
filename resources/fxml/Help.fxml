@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx= "http://javafx.com/fxml"
+            fx:controller="controller.HelpController"
+            prefWidth="500.0"
+            prefHeight="400.0">
+
+    <center>
+        <TabPane tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="tabAdd">
+                    <content>
+                        <TextArea
+                                fx:id="addHelpText"
+                                editable="false"
+                                wrapText="true"
+                                style="-fx-front-size: 14px; -fx-padding: 10;"/>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabSearch">
+                    <content>
+                        <TextArea
+                                fx:id="searchHelpText"
+                                editable="false"
+                                wrapText="true"
+                                style="-fx-front-size: 14px; -fx-padding: 10;"/>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabDashboard">
+                    <content>
+                        <TextArea
+                                fx:id="dashboardHelpText"
+                                editable="false"
+                                wrapText="true"
+                                style="-fx-front-size: 14px; -fx-padding: 10;"/>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabShortcuts">
+                    <content>
+                        <TextArea
+                                fx:id="shortcutHelpText"
+                                editable="false"
+                                wrapText="true"
+                                style="-fx-front-size: 14px; -fx-padding: 10;"/>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>
