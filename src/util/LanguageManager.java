@@ -15,10 +15,10 @@ public class LanguageManager {
     private static ResourceBundle bundle;
 
     static{
-        loadBuble(currentLocale.get());
+        loadBundle(currentLocale.get());
     }
 
-    private static void loadBuble(Locale locale){
+    private static void loadBundle(Locale locale){
         try{
             bundle = 
                     ResourceBundle.getBundle(
@@ -47,7 +47,7 @@ public class LanguageManager {
             newLocale
         );
 
-        loadBuble(newLocale);
+        loadBundle(newLocale);
     }
     
     public static String getText(String key){
