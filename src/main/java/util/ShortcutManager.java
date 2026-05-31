@@ -3,7 +3,7 @@ package util;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyCodeCombination;
-import javafx.scene.input.KeyCombination
+import javafx.scene.input.KeyCombination;
 public class ShortcutManager {
 
     public static void applyShortcuts(
@@ -33,7 +33,7 @@ public class ShortcutManager {
             }
 
             if (new KeyCodeCombination(
-                    KeyCode.E,
+                    KeyCode.Q,
                     KeyCombination.CONTROL_DOWN)
                     .match(event)) {
 
