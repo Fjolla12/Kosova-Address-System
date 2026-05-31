@@ -9,7 +9,7 @@ public class DBConnection {
     // Kontrollon: url, username, password
     private static final String URL = "jdbc:mysql://localhost:3306/kosova_address_system";
     private static final String USER = "root"; 
-    private static final String PASSWORD = "Nisa123.."; 
+    private static final String PASSWORD = "Nisa123."; 
     
     private static Connection connection = null;
 
