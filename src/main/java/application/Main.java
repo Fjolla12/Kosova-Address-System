@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import util.ShortcutManager;
 
 public class Main extends Application {
     private Stage primaryStage;
@@ -15,7 +16,24 @@ public class Main extends Application {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/MainWindow.fxml"));
             BorderPane root = loader.load();
-            primaryStage.setScene(new Scene(root));
+            Scene scene = new Scene(root);
+primaryStage.setScene(scene);
+            ShortcutManager.applyShortcuts(
+
+        scene,
+
+        () -> {
+            System.out.println("Save");
+        },
+
+        () -> {
+            System.out.println("Search");
+        },
+
+        () -> {
+            primaryStage.close();
+        }
+);
             primaryStage.setTitle("Kosova Address System");
             primaryStage.show();
             ((MainController)loader.getController()).setMainApp(this);
