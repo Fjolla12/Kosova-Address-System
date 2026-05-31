@@ -35,8 +35,7 @@ public class HelpController {
     public void initialize(){
         loadTexts();
 
-        src.util.LanguageManager
-                .currentLocaleProperty()
+        LanguageManager.currentLocaleProperty()
                 .addListener(
                     (
                         observable,
@@ -49,7 +48,7 @@ public class HelpController {
     private void loadTexts(){
         tabAdd.setText(
             LanguageManager.getText(
-                "help.tab.search"
+                "help.tab.add"
             )
         );
 
