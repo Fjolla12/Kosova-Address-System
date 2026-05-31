@@ -9,4 +9,7 @@ module kosova.address.system {
 
     exports application;
     exports controller;
+    exports model;
+    exports dao;
+    exports service;
 }
