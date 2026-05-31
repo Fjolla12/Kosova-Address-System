@@ -17,7 +17,7 @@
                                 fx:id="addHelpText"
                                 editable="false"
                                 wrapText="true"
-                                style="-fx-front-size: 14px; -fx-padding: 10;"/>
+                                style="-fx-font-size: 14px; -fx-padding: 10;"/>
                     </content>
                 </Tab>
                 <Tab fx:id="tabSearch">
@@ -26,7 +26,7 @@
                                 fx:id="searchHelpText"
                                 editable="false"
                                 wrapText="true"
-                                style="-fx-front-size: 14px; -fx-padding: 10;"/>
+                                style="-fx-font-size: 14px; -fx-padding: 10;"/>
                     </content>
                 </Tab>
                 <Tab fx:id="tabDashboard">
@@ -35,7 +35,7 @@
                                 fx:id="dashboardHelpText"
                                 editable="false"
                                 wrapText="true"
-                                style="-fx-front-size: 14px; -fx-padding: 10;"/>
+                                style="-fx-font-size: 14px; -fx-padding: 10;"/>
                     </content>
                 </Tab>
                 <Tab fx:id="tabShortcuts">
@@ -44,7 +44,7 @@
                                 fx:id="shortcutHelpText"
                                 editable="false"
                                 wrapText="true"
-                                style="-fx-front-size: 14px; -fx-padding: 10;"/>
+                                style="-fx-font-size: 14px; -fx-padding: 10;"/>
                     </content>
                 </Tab>
             </tabs>
